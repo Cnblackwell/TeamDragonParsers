@@ -5,7 +5,7 @@ Team Mates: Sidra Bushra, Delphin Rajasekhar, Nhi Vu, Calen Blackwell
 
 [Project Description]
 
-Goals
+Goals: 
 TeamDragonParsers (“the Team”) and their package will demonstrate the following behaviours:
 -	Successful unit testing, using pytest
 -	Loading appropriate configuration (system, user, or job specific) files 
