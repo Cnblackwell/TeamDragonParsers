@@ -38,7 +38,7 @@ o	(e.g. in YAML or TOML formats)
 
 [MIT License]
 
-[Copyright (c) 2024 Sidra Bushra, Delphin Rajasekhar, Nhi Vu, Calen Blackwell]
+[Copyright (c) 2024 Sidra Bushra, Delphin Rajasekhar, Nhi Vu, Calen Blackwell, Chimaobi Osuegbu]
 
 
 ![image](https://github.com/Cnblackwell/TeamDragonParsers/assets/156455477/533852bb-4adc-4a52-aa33-02def6dc3864)
