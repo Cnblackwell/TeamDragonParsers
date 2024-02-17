@@ -1,5 +1,5 @@
 # TeamDragonParsers
-Team Mates: Sidra Bushra, Delphin Rajasekhar, Nhi Vu, Calen Blackwell 
+Team Mates: Sidra Bushra, Delphin Rajasekhar, Nhi Vu, Calen Blackwell, & Chimaobi Osuegbu
 
 # Project Title
 
