@@ -11,7 +11,7 @@ authors = [
     {name = "Nhi Vu", email = "vuynhi@gmail.com" },
     {name = "Chimaobi Osuegbu", email = "chima.osuegbu@gmail.com" }
 ]
-description = "Show 4 graphs: Graph 1: Arrests by Year; Graph 2: Arrests By Age; Graph 3: Arrests, Cohort by Year; Graph 4: "Relationship between Age and Year, Years 2014-2022"
+description = "Show 4 graphs: Graph 1: Arrests by Year; Graph 2: Arrests By Age; Graph 3: Arrests, Cohort by Year; Graph 4: "Relationship between Age and Year, Years '2014-2022'."
 version = "0.1.0"
 dependencies = ["pandas", "logging", "requests", "json", "matplotlib", "numpy", "toml", "sklearn", "LinearRegression", "yaml"]
 requires-python = ">=3.10.0"
