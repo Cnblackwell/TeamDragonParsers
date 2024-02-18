@@ -1,0 +1,216 @@
+"{\n \"cells\": [\n  {\n   \"cell_type\": \"code\",\n   \"execution_count\": 7,\n\
+  \   \"metadata\": {},\n   \"outputs\": [\n    {\n     \"name\": \"stderr\",\n  \
+  \   \"output_type\": \"stream\",\n     \"text\": [\n      \"INFO:root:Toronto Open\
+  \ DataFrame created successfully using CKAN API parameters.\\n\"\n     ]\n    },\n\
+  \    {\n     \"data\": {\n      \"text/html\": [\n       \"<div>\\n\",\n       \"\
+  <style scoped>\\n\",\n       \"    .dataframe tbody tr th:only-of-type {\\n\",\n\
+  \       \"        vertical-align: middle;\\n\",\n       \"    }\\n\",\n       \"\
+  \\n\",\n       \"    .dataframe tbody tr th {\\n\",\n       \"        vertical-align:\
+  \ top;\\n\",\n       \"    }\\n\",\n       \"\\n\",\n       \"    .dataframe thead\
+  \ th {\\n\",\n       \"        text-align: right;\\n\",\n       \"    }\\n\",\n\
+  \       \"</style>\\n\",\n       \"<table border=\\\"1\\\" class=\\\"dataframe\\\
+  \">\\n\",\n       \"  <thead>\\n\",\n       \"    <tr style=\\\"text-align: right;\\\
+  \">\\n\",\n       \"      <th></th>\\n\",\n       \"      <th>_id</th>\\n\",\n \
+  \      \"      <th>ARREST_YEAR</th>\\n\",\n       \"      <th>DIVISION</th>\\n\"\
+  ,\n       \"      <th>HOOD_158</th>\\n\",\n       \"      <th>NEIGHBOURHOOD_158</th>\\\
+  n\",\n       \"      <th>SEX</th>\\n\",\n       \"      <th>AGE_COHORT</th>\\n\"\
+  ,\n       \"      <th>AGE_GROUP</th>\\n\",\n       \"      <th>CATEGORY</th>\\n\"\
+  ,\n       \"      <th>SUBTYPE</th>\\n\",\n       \"      <th>ARREST_COUNT</th>\\\
+  n\",\n       \"    </tr>\\n\",\n       \"  </thead>\\n\",\n       \"  <tbody>\\\
+  n\",\n       \"    <tr>\\n\",\n       \"      <th>0</th>\\n\",\n       \"      <td>17</td>\\\
+  n\",\n       \"      <td>2021</td>\\n\",\n       \"      <td>D11</td>\\n\",\n  \
+  \     \"      <td>111</td>\\n\",\n       \"      <td>Rockcliffe-Smythe (111)</td>\\\
+  n\",\n       \"      <td>Male</td>\\n\",\n       \"      <td>35 to 44</td>\\n\"\
+  ,\n       \"      <td>Adult</td>\\n\",\n       \"      <td>Crimes Against the Person</td>\\\
+  n\",\n       \"      <td>Assaults</td>\\n\",\n       \"      <td>2</td>\\n\",\n\
+  \       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>1</th>\\\
+  n\",\n       \"      <td>75</td>\\n\",\n       \"      <td>2020</td>\\n\",\n   \
+  \    \"      <td>D11</td>\\n\",\n       \"      <td>171</td>\\n\",\n       \"  \
+  \    <td>Junction-Wallace Emerson (171)</td>\\n\",\n       \"      <td>Female</td>\\\
+  n\",\n       \"      <td>25 to 34</td>\\n\",\n       \"      <td>Adult</td>\\n\"\
+  ,\n       \"      <td>Crimes Against the Person</td>\\n\",\n       \"      <td>Assaults</td>\\\
+  n\",\n       \"      <td>3</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\\
+  n\",\n       \"      <th>2</th>\\n\",\n       \"      <td>129</td>\\n\",\n     \
+  \  \"      <td>2019</td>\\n\",\n       \"      <td>D11</td>\\n\",\n       \"   \
+  \   <td>171</td>\\n\",\n       \"      <td>Junction-Wallace Emerson (171)</td>\\\
+  n\",\n       \"      <td>Male</td>\\n\",\n       \"      <td>18 to 24</td>\\n\"\
+  ,\n       \"      <td>Adult</td>\\n\",\n       \"      <td>Crimes Against the Person</td>\\\
+  n\",\n       \"      <td>Other</td>\\n\",\n       \"      <td>3</td>\\n\",\n   \
+  \    \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>3</th>\\n\"\
+  ,\n       \"      <td>145</td>\\n\",\n       \"      <td>2022</td>\\n\",\n     \
+  \  \"      <td>D11</td>\\n\",\n       \"      <td>91</td>\\n\",\n       \"     \
+  \ <td>Weston-Pelham Park (91)</td>\\n\",\n       \"      <td>Male</td>\\n\",\n \
+  \      \"      <td>25 to 34</td>\\n\",\n       \"      <td>Adult</td>\\n\",\n  \
+  \     \"      <td>Other Criminal Code Violations</td>\\n\",\n       \"      <td>Other</td>\\\
+  n\",\n       \"      <td>8</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\\
+  n\",\n       \"      <th>4</th>\\n\",\n       \"      <td>150</td>\\n\",\n     \
+  \  \"      <td>2021</td>\\n\",\n       \"      <td>D11</td>\\n\",\n       \"   \
+  \   <td>88</td>\\n\",\n       \"      <td>High Park North (88)</td>\\n\",\n    \
+  \   \"      <td>Male</td>\\n\",\n       \"      <td>18 to 24</td>\\n\",\n      \
+  \ \"      <td>Adult</td>\\n\",\n       \"      <td>Crimes Against the Person</td>\\\
+  n\",\n       \"      <td>Assaults</td>\\n\",\n       \"      <td>1</td>\\n\",\n\
+  \       \"    </tr>\\n\",\n       \"  </tbody>\\n\",\n       \"</table>\\n\",\n\
+  \       \"</div>\"\n      ],\n      \"text/plain\": [\n       \"   _id  ARREST_YEAR\
+  \ DIVISION HOOD_158               NEIGHBOURHOOD_158     SEX  \\\\\\n\",\n      \
+  \ \"0   17         2021      D11      111         Rockcliffe-Smythe (111)    Male\
+  \   \\n\",\n       \"1   75         2020      D11      171  Junction-Wallace Emerson\
+  \ (171)  Female   \\n\",\n       \"2  129         2019      D11      171  Junction-Wallace\
+  \ Emerson (171)    Male   \\n\",\n       \"3  145         2022      D11       91\
+  \         Weston-Pelham Park (91)    Male   \\n\",\n       \"4  150         2021\
+  \      D11       88            High Park North (88)    Male   \\n\",\n       \"\\\
+  n\",\n       \"  AGE_COHORT AGE_GROUP                        CATEGORY   SUBTYPE\
+  \  ARREST_COUNT  \\n\",\n       \"0   35 to 44     Adult       Crimes Against the\
+  \ Person  Assaults             2  \\n\",\n       \"1   25 to 34     Adult      \
+  \ Crimes Against the Person  Assaults             3  \\n\",\n       \"2   18 to\
+  \ 24     Adult       Crimes Against the Person     Other             3  \\n\",\n\
+  \       \"3   25 to 34     Adult  Other Criminal Code Violations     Other     \
+  \        8  \\n\",\n       \"4   18 to 24     Adult       Crimes Against the Person\
+  \  Assaults             1  \"\n      ]\n     },\n     \"execution_count\": 7,\n\
+  \     \"metadata\": {},\n     \"output_type\": \"execute_result\"\n    }\n   ],\n\
+  \   \"source\": [\n    \"import logging\\n\",\n    \"import requests\\n\",\n   \
+  \ \"import pandas as pd\\n\",\n    \"import json\\n\",\n    \"\\n\",\n    \"# Configure\
+  \ logging\\n\",\n    \"logging.basicConfig(level=logging.INFO, handlers=[logging.StreamHandler(),\
+  \ logging.FileHandler('package_id')])\\n\",\n    \"\\n\",\n    \"def load_data_OpenDataTO(package_id):\\\
+  n\",\n    \"    \\\"\\\"\\\"\\n\",\n    \"    Load a dataset from the Toronto Open\
+  \ Data API.\\n\",\n    \"\\n\",\n    \"    Parameters:\\n\",\n    \"    - package_id\
+  \ (str): The ID of the package containing the dataset in a dict {}.\\n\",\n    \"\
+  \\n\",\n    \"    Returns:\\n\",\n    \"    - pd.DataFrame or None: A DataFrame\
+  \ containing the dataset if successfully loaded, \\n\",\n    \"                \
+  \            or None if an error occurred.\\n\",\n    \"    \\\"\\\"\\\"\\n\",\n\
+  \    \"    # Define the base URL for the Toronto Open Data API\\n\",\n    \"   \
+  \ base_url = \\\"https://ckan0.cf.opendata.inter.prod-toronto.ca\\\"\\n\",\n   \
+  \ \"\\n\",\n    \"    # Define the URL to access the metadata of a package\\n\"\
+  ,\n    \"    metadata_url = base_url + \\\"/api/3/action/package_show\\\"\\n\",\n\
+  \    \"\\n\",\n    \"    # Set the parameters to retrieve information about the\
+  \ desired package\\n\",\n    \"    params = {\\\"id\\\": package_id}\\n\",\n   \
+  \ \"         \\n\",\n    \"    # Send a GET request to retrieve metadata about the\
+  \ package\\n\",\n    \"    response = requests.get(metadata_url, params=params)\\\
+  n\",\n    \"\\n\",\n    \"    # Check if the GET request was successful\\n\",\n\
+  \    \"    if response.status_code == 200:\\n\",\n    \"        # Parse the JSON\
+  \ response\\n\",\n    \"        package_info = response.json()\\n\",\n    \"   \
+  \     \\n\",\n    \"        # Extract information about the resources in the package\\\
+  n\",\n    \"        resources = package_info['result']['resources']\\n\",\n    \"\
+  \        \\n\",\n    \"        # Look for a JSON resource and load its data using\
+  \ CKAN API\\n\",\n    \"        for resource in resources:\\n\",\n    \"       \
+  \     if resource['format'].lower() == 'json':\\n\",\n    \"                data_url\
+  \ = base_url + \\\"/api/3/action/datastore_search\\\"\\n\",\n    \"            \
+  \    params = {\\\"id\\\": resource[\\\"id\\\"]}\\n\",\n    \"                filters\
+  \ = {\\n\",\n    \"                    \\\"ARREST_YEAR\\\": [2018, 2019, 2020, 2021,\
+  \ 2022],\\n\",\n    \"                    \\\"DIVISION\\\": \\\"D11\\\"  # Filter\
+  \ for DIVISION\\n\",\n    \"                }\\n\",\n    \"\\n\",\n    \"      \
+  \          all_records = []\\n\",\n    \"                limit = 1000  # Number\
+  \ of records to retrieve per request\\n\",\n    \"                \\n\",\n    \"\
+  \                # Paginate through the data until all records are retrieved\\n\"\
+  ,\n    \"                offset = 0\\n\",\n    \"                while True:\\n\"\
+  ,\n    \"                    params[\\\"offset\\\"] = offset\\n\",\n    \"     \
+  \               params[\\\"limit\\\"] = limit\\n\",\n    \"                    params[\\\
+  \"filters\\\"] = json.dumps(filters)  # Encode filters as JSON string\\n\",\n  \
+  \  \"                    response = requests.get(data_url, params=params)\\n\",\n\
+  \    \"                    response_json = response.json()\\n\",\n    \"       \
+  \             if \\\"result\\\" not in response_json or not response_json[\\\"success\\\
+  \"]:\\n\",\n    \"                        logging.error(\\\"Error retrieving data\
+  \ from the API.\\\")\\n\",\n    \"                        return None\\n\",\n  \
+  \  \"                    \\n\",\n    \"                    resource_search_data\
+  \ = response_json[\\\"result\\\"]\\n\",\n    \"                    records = resource_search_data.get(\\\
+  \"records\\\", [])\\n\",\n    \"                    all_records.extend(records)\\\
+  n\",\n    \"                    \\n\",\n    \"                    # Check if we\
+  \ have fetched all records\\n\",\n    \"                    if len(records) < limit:\\\
+  n\",\n    \"                        break  # Break the loop if all records have\
+  \ been retrieved\\n\",\n    \"                    \\n\",\n    \"               \
+  \     offset += limit  # Move to the next page\\n\",\n    \"                \\n\"\
+  ,\n    \"                df = pd.DataFrame(all_records)\\n\",\n    \"          \
+  \      logging.info(\\\"Toronto Open DataFrame created successfully using CKAN API\
+  \ parameters.\\\")\\n\",\n    \"                return df\\n\",\n    \"        else:\\\
+  n\",\n    \"            logging.warning(\\\"No JSON resource found in the package.\\\
+  \")\\n\",\n    \"            return None\\n\",\n    \"            \\n\",\n    \"\
+  \    else:\\n\",\n    \"        logging.error(\\\"Failed to retrieve metadata from\
+  \ the API.\\\")\\n\",\n    \"        return None\\n\",\n    \"\\n\",\n    \"# Load\
+  \ the Annual Police Report data into the DataFrame\\n\",\n    \"    \\n\",\n   \
+  \ \"package_id = \\\"police-annual-statistical-report-arrested-and-charged-persons\\\
+  \"\\n\",\n    \"\\n\",\n    \"annual_police_report = load_data_OpenDataTO(package_id)\\\
+  n\",\n    \"if annual_police_report is not None:\\n\",\n    \"    annual_police_report.head()\\\
+  n\",\n    \"else:\\n\",\n    \"    logging.error(\\\"Failed to load the dataset.\\\
+  \")\\n\",\n    \"annual_police_report.head()\"\n   ]\n  },\n  {\n   \"cell_type\"\
+  : \"code\",\n   \"execution_count\": 8,\n   \"metadata\": {},\n   \"outputs\": [\n\
+  \    {\n     \"data\": {\n      \"text/html\": [\n       \"<div>\\n\",\n       \"\
+  <style scoped>\\n\",\n       \"    .dataframe tbody tr th:only-of-type {\\n\",\n\
+  \       \"        vertical-align: middle;\\n\",\n       \"    }\\n\",\n       \"\
+  \\n\",\n       \"    .dataframe tbody tr th {\\n\",\n       \"        vertical-align:\
+  \ top;\\n\",\n       \"    }\\n\",\n       \"\\n\",\n       \"    .dataframe thead\
+  \ th {\\n\",\n       \"        text-align: right;\\n\",\n       \"    }\\n\",\n\
+  \       \"</style>\\n\",\n       \"<table border=\\\"1\\\" class=\\\"dataframe\\\
+  \">\\n\",\n       \"  <thead>\\n\",\n       \"    <tr style=\\\"text-align: right;\\\
+  \">\\n\",\n       \"      <th></th>\\n\",\n       \"      <th>_id</th>\\n\",\n \
+  \      \"      <th>arrest_year</th>\\n\",\n       \"      <th>division</th>\\n\"\
+  ,\n       \"      <th>hood_158</th>\\n\",\n       \"      <th>neighbourhood_158</th>\\\
+  n\",\n       \"      <th>sex</th>\\n\",\n       \"      <th>age_cohort</th>\\n\"\
+  ,\n       \"      <th>age_group</th>\\n\",\n       \"      <th>category</th>\\n\"\
+  ,\n       \"      <th>subtype</th>\\n\",\n       \"      <th>arrest_count</th>\\\
+  n\",\n       \"    </tr>\\n\",\n       \"  </thead>\\n\",\n       \"  <tbody>\\\
+  n\",\n       \"    <tr>\\n\",\n       \"      <th>0</th>\\n\",\n       \"      <td>17</td>\\\
+  n\",\n       \"      <td>2021</td>\\n\",\n       \"      <td>D11</td>\\n\",\n  \
+  \     \"      <td>111</td>\\n\",\n       \"      <td>Rockcliffe-Smythe (111)</td>\\\
+  n\",\n       \"      <td>Male</td>\\n\",\n       \"      <td>35 to 44</td>\\n\"\
+  ,\n       \"      <td>Adult</td>\\n\",\n       \"      <td>Crimes Against the Person</td>\\\
+  n\",\n       \"      <td>Assaults</td>\\n\",\n       \"      <td>2</td>\\n\",\n\
+  \       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>1</th>\\\
+  n\",\n       \"      <td>75</td>\\n\",\n       \"      <td>2020</td>\\n\",\n   \
+  \    \"      <td>D11</td>\\n\",\n       \"      <td>171</td>\\n\",\n       \"  \
+  \    <td>Junction-Wallace Emerson (171)</td>\\n\",\n       \"      <td>Female</td>\\\
+  n\",\n       \"      <td>25 to 34</td>\\n\",\n       \"      <td>Adult</td>\\n\"\
+  ,\n       \"      <td>Crimes Against the Person</td>\\n\",\n       \"      <td>Assaults</td>\\\
+  n\",\n       \"      <td>3</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\\
+  n\",\n       \"      <th>2</th>\\n\",\n       \"      <td>129</td>\\n\",\n     \
+  \  \"      <td>2019</td>\\n\",\n       \"      <td>D11</td>\\n\",\n       \"   \
+  \   <td>171</td>\\n\",\n       \"      <td>Junction-Wallace Emerson (171)</td>\\\
+  n\",\n       \"      <td>Male</td>\\n\",\n       \"      <td>18 to 24</td>\\n\"\
+  ,\n       \"      <td>Adult</td>\\n\",\n       \"      <td>Crimes Against the Person</td>\\\
+  n\",\n       \"      <td>Other</td>\\n\",\n       \"      <td>3</td>\\n\",\n   \
+  \    \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>3</th>\\n\"\
+  ,\n       \"      <td>145</td>\\n\",\n       \"      <td>2022</td>\\n\",\n     \
+  \  \"      <td>D11</td>\\n\",\n       \"      <td>91</td>\\n\",\n       \"     \
+  \ <td>Weston-Pelham Park (91)</td>\\n\",\n       \"      <td>Male</td>\\n\",\n \
+  \      \"      <td>25 to 34</td>\\n\",\n       \"      <td>Adult</td>\\n\",\n  \
+  \     \"      <td>Other Criminal Code Violations</td>\\n\",\n       \"      <td>Other</td>\\\
+  n\",\n       \"      <td>8</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\\
+  n\",\n       \"      <th>4</th>\\n\",\n       \"      <td>150</td>\\n\",\n     \
+  \  \"      <td>2021</td>\\n\",\n       \"      <td>D11</td>\\n\",\n       \"   \
+  \   <td>88</td>\\n\",\n       \"      <td>High Park North (88)</td>\\n\",\n    \
+  \   \"      <td>Male</td>\\n\",\n       \"      <td>18 to 24</td>\\n\",\n      \
+  \ \"      <td>Adult</td>\\n\",\n       \"      <td>Crimes Against the Person</td>\\\
+  n\",\n       \"      <td>Assaults</td>\\n\",\n       \"      <td>1</td>\\n\",\n\
+  \       \"    </tr>\\n\",\n       \"  </tbody>\\n\",\n       \"</table>\\n\",\n\
+  \       \"</div>\"\n      ],\n      \"text/plain\": [\n       \"   _id  arrest_year\
+  \ division hood_158               neighbourhood_158     sex  \\\\\\n\",\n      \
+  \ \"0   17         2021      D11      111         Rockcliffe-Smythe (111)    Male\
+  \   \\n\",\n       \"1   75         2020      D11      171  Junction-Wallace Emerson\
+  \ (171)  Female   \\n\",\n       \"2  129         2019      D11      171  Junction-Wallace\
+  \ Emerson (171)    Male   \\n\",\n       \"3  145         2022      D11       91\
+  \         Weston-Pelham Park (91)    Male   \\n\",\n       \"4  150         2021\
+  \      D11       88            High Park North (88)    Male   \\n\",\n       \"\\\
+  n\",\n       \"  age_cohort age_group                        category   subtype\
+  \  arrest_count  \\n\",\n       \"0   35 to 44     Adult       Crimes Against the\
+  \ Person  Assaults             2  \\n\",\n       \"1   25 to 34     Adult      \
+  \ Crimes Against the Person  Assaults             3  \\n\",\n       \"2   18 to\
+  \ 24     Adult       Crimes Against the Person     Other             3  \\n\",\n\
+  \       \"3   25 to 34     Adult  Other Criminal Code Violations     Other     \
+  \        8  \\n\",\n       \"4   18 to 24     Adult       Crimes Against the Person\
+  \  Assaults             1  \"\n      ]\n     },\n     \"execution_count\": 8,\n\
+  \     \"metadata\": {},\n     \"output_type\": \"execute_result\"\n    }\n   ],\n\
+  \   \"source\": [\n    \"#converting column names to lowecase\\n\",\n    \"def rename_data(annual_police_report):\\\
+  n\",\n    \"  if annual_police_report is None:\\n\",\n    \"    raise ValueError('No\
+  \ columns found')\\n\",\n    \"  report=annual_police_report.rename(columns=str.lower)\\\
+  n\",\n    \"  return report\\n\",\n    \"rename_data(annual_police_report)\\n\"\
+  ,\n    \"annual_police_report=rename_data(annual_police_report)\\n\",\n    \"annual_police_report.head()\"\
+  \n   ]\n  },\n  {\n   \"cell_type\": \"code\",\n   \"execution_count\": null,\n\
+  \   \"metadata\": {},\n   \"outputs\": [],\n   \"source\": []\n  },\n  {\n   \"\
+  cell_type\": \"code\",\n   \"execution_count\": null,\n   \"metadata\": {},\n  \
+  \ \"outputs\": [],\n   \"source\": []\n  },\n  {\n   \"cell_type\": \"code\",\n\
+  \   \"execution_count\": null,\n   \"metadata\": {},\n   \"outputs\": [],\n   \"\
+  source\": []\n  }\n ],\n \"metadata\": {\n  \"kernelspec\": {\n   \"display_name\"\
+  : \"Python 3\",\n   \"language\": \"python\",\n   \"name\": \"python3\"\n  },\n\
+  \  \"language_info\": {\n   \"codemirror_mode\": {\n    \"name\": \"ipython\",\n\
+  \    \"version\": 3\n   },\n   \"file_extension\": \".py\",\n   \"mimetype\": \"\
+  text/x-python\",\n   \"name\": \"python\",\n   \"nbconvert_exporter\": \"python\"\
+  ,\n   \"pygments_lexer\": \"ipython3\",\n   \"version\": \"3.11.5\"\n  }\n },\n\
+  \ \"nbformat\": 4,\n \"nbformat_minor\": 2\n}"
