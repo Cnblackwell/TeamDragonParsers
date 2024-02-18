@@ -6,10 +6,10 @@ build-backend = "hatchling.build"
 name = "annual_police_report"
 authors = [
     {name = "Calen Blackwell", email = "cn.blackwell13@gmail.com"},
-    {name = "Sidra Bushra", email = "" },
+    {name = "Sidra Bushra", email = "maliksidra622@gmail.com" },
     {name = "Delphin Rajasekhar", email = ""},
-    {name = "Nhi Vu", email = "" },
-    {name = "Chimaobi Osuegbu", email = "" }
+    {name = "Nhi Vu", email = "vuynhi@gmail.com" },
+    {name = "Chimaobi Osuegbu", email = "chima.osuegbu@gmail.com" }
 ]
 description = "Show two graphs: Graph 1 - Number of Arrests per Year; Graph 2 - Number of Arrests per Age Group at Year."
 version = "0.1.0"
