@@ -21,7 +21,7 @@ classifiers = [
 ]
 
 [project.scripts]
-ArrestsByYear = "annual_police_report:arrests_by_year"
-ArrestsByAge = "annual_police_report:arrests_by_age"
-ArrestsCohort = "annual_police_report:arrests_cohort"
+ArrestsByYear = "annual_police_report:arrest_by_year"
+ArrestsByAge = "annual_police_report:arrest_by_age"
+ArrestsCohort = "annual_police_report:arrest_cohort"
 LinearRegression = "annual_police_report:linear_regression" 
