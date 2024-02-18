@@ -7,13 +7,13 @@ name = "annual_police_report"
 authors = [
     {name = "Calen Blackwell", email = "cn.blackwell13@gmail.com"},
     {name = "Sidra Bushra", email = "maliksidra622@gmail.com" },
-    {name = "Delphin Rajasekhar", email = ""},
+    {name = "Delphin Rajasekhar", email = "maildelphin.k@gmail.com"},
     {name = "Nhi Vu", email = "vuynhi@gmail.com" },
     {name = "Chimaobi Osuegbu", email = "chima.osuegbu@gmail.com" }
 ]
-description = "Show two graphs: Graph 1 - Number of Arrests per Year; Graph 2 - Number of Arrests per Age Group at Year."
+description = "Show 4 graphs: Graph 1: Arrests by Year; Graph 2: Arrests By Age; Graph 3: Arrests, Cohort by Year; Graph 4: "Relationship between Age and Year, Years 2014-2022"
 version = "0.1.0"
-dependencies = ["pandas", "logging", "requests", "json", "matplotlib", "numpy", "toml", "sklearn", "LinearRegression"]
+dependencies = ["pandas", "logging", "requests", "json", "matplotlib", "numpy", "toml", "sklearn", "LinearRegression", "yaml"]
 requires-python = ">=3.10.0"
 readme = "README.md"
 classifiers = [
@@ -21,5 +21,7 @@ classifiers = [
 ]
 
 [project.scripts]
-Graph1 = "annual_police_report:x"
-Graph2 = "annual_police_report:y"
+ArrestsByYear = "annual_police_report:arrests_by_year"
+ArrestsByAge = "annual_police_report:arrests_by_age"
+ArrestsCohort = "annual_police_report:arrests_cohort"
+LinearRegression = "annual_police_report:linear_regression" 
