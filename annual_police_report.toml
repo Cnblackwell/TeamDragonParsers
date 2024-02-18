@@ -13,7 +13,7 @@ authors = [
 ]
 description = "Show two graphs: Graph 1 - Number of Arrests per Year; Graph 2 - Number of Arrests per Age Group at Year."
 version = "0.1.0"
-dependencies = ["pandas", "logging", "requests", "json", "matplotlib", "numpy", "toml"]
+dependencies = ["pandas", "logging", "requests", "json", "matplotlib", "numpy", "toml", "sklearn", "LinearRegression"]
 requires-python = ">=3.10.0"
 readme = "README.md"
 classifiers = [
