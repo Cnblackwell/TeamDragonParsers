@@ -21,16 +21,12 @@ Publisher: Toronto Police Services, <contact: analytics.innovation@torontopolice
 
 [Goals]
 TeamDragonParsers (“the Team”) and their package will demonstrate the following behaviours:
--	Successful unit testing, using pytest
+-	Successful unit testing, using pytest;
 -	Loading appropriate configuration (system, user, or job specific) files 
-
-	(e.g. in YAML or TOML formats)
-
-	(e.g. in YAML and TOML formats)
-
--	Produce helpful error messages and using try/except for exception handling
--	Utilize logging library capabilities to control output
--	Install package contents from GitHub using pip install
+	(e.g. in YAML or TOML formats);
+	Produce helpful error messages and using try/except for exception handling;
+-	Utilize logging library capabilities to control output;
+-	Install package contents from GitHub using pip install.
 
 ## Table of Contents
 
