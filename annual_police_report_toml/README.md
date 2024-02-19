@@ -37,11 +37,13 @@ TeamDragonParsers (“the Team”) and their package will demonstrate the follow
 ## Installation
 
 1.) For annual_police_report folder with integrated YAML file, just run annual_police_report.py
+
 2.) For annual_police_report folder with TOML, install using pip install -e./
 
 ## Usage
 
 1.) For TOML, use the command 'Demo' to run the desired output
+
 2.) For TOML, use the command 'Demo2' to run the desired output
 
 ## Contributing
