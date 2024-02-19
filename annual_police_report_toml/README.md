@@ -1,17 +1,10 @@
 # TeamDragonParsers
 Team Mates: Sidra Bushra, Delphin Rajasekhar, Nhi Vu, Calen Blackwell, & Chimaobi Osuegbu
 
-
-# Project Title : Project Kimaro 
-
-[Project Description]
-This python script ("Project Kimaro") aims to pull data from the Toronto Open Data API, and view the number of charges and arrests made by the Toronto Police Services between 2018 and 2022.
-
 # Project Title : Project Kimaro (annual_police_report.py)
 
 [Project Description]
 This python script ("Project Kimaro") aims to pull data from the Toronto Open Data API, and view the number of charges and arrests made by the Toronto Police Services between 2014 and 2022.
-
 
 The API data is hosted by the Municipality of Toronto, which can be found in the link:
 	https://open.toronto.ca/dataset/police-annual-statistical-report-arrested-and-charged-persons/
@@ -29,11 +22,7 @@ Publisher: Toronto Police Services, <contact: analytics.innovation@torontopolice
 TeamDragonParsers (“the Team”) and their package will demonstrate the following behaviours:
 -	Successful unit testing, using pytest
 -	Loading appropriate configuration (system, user, or job specific) files 
-
-	(e.g. in YAML or TOML formats)
-
 	(e.g. in YAML and TOML formats)
-
 -	Produce helpful error messages and using try/except for exception handling
 -	Utilize logging library capabilities to control output
 -	Install package contents from GitHub using pip install
@@ -60,12 +49,6 @@ TeamDragonParsers (“the Team”) and their package will demonstrate the follow
 ## Contributing
 
 See Conduct.md
-
-All members of TeamDragonParsers completed the assignment, using equal contribution based on the
-members' knowledge, judgement, and understanding of the assignment objectives.
-
-All collaborative work (e.g. commits, merges, pulls, and pushes) can be found in the debugging branch found in the repository below:
-	 https://github.com/Cnblackwell/TeamDragonParsers/tree/debugging
 
 All members of TeamDragonParsers completed the assignment, using equal contribution based on the
 members' knowledge, judgement, and understanding of the assignment objectives.
