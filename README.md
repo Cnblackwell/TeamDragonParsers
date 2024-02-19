@@ -25,7 +25,8 @@ o	(e.g. in YAML or TOML formats)
 
 ## Installation
 
-[Installation instructions]
+[1.run the annual_police_report.py file in Terminal using "python annual_police_report.py"
+ 2. Use pip install -e./ command to install package into Terminal (e.g. Gitbash, Terminal)]
 
 ## Usage
 
