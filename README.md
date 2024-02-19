@@ -4,24 +4,30 @@ Team Mates: Sidra Bushra, Delphin Rajasekhar, Nhi Vu, Calen Blackwell, & Chimaob
 # Project Title : Project Kimaro (annual_police_report.py)
 
 [Project Description]
-This python script ("Project Kimaro") aims to pull data from the Toronto Open Data API, and view the number of charges and arrests made by the Toronto Police Services between 2014 and 2022.
 
+This Python script ("Project Kimaro") aims to pull data from the Toronto Open Data API, and view the number of charges and arrests made by the Toronto Police Services between 2014 and 2022.
 
 The API data is hosted by the Municipality of Toronto, which can be found in the link:
 	https://open.toronto.ca/dataset/police-annual-statistical-report-arrested-and-charged-persons/
 
 [Data Details]
 Data last refreshed: November 28, 2023
+
 Data Refresh Frequency: Annually
+
 Data Type: Table
+
 Licence: Open Government License - Toronto
+
 		url: https://open.toronto.ca/open-data-license/
+  
 Publisher: Toronto Police Services, <contact: analytics.innovation@torontopolice.on.ca>
  
-
 [Goals]
+
 TeamDragonParsers (“the Team”) and their package will demonstrate the following behaviours:
 -	Successful unit testing, using pytest;
+-	Run the Python scripts annual_police_report.py (in YAML and TOML package);
 -	Loading appropriate configuration (system, user, or job specific) files 
 	(e.g. in YAML or TOML formats);
 	Produce helpful error messages and using try/except for exception handling;
