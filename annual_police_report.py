@@ -5,7 +5,17 @@ import pandas as pd
 import json
 import matplotlib.pyplot as plt
 import numpy as np
+import yaml
 from sklearn.linear_model import LinearRegression
+
+config_files = ['jobconfig.yml']
+config = {}
+
+for this_config_file in config_files:
+    with open(this_config_file, 'r') as yamlfile:
+        this_config = yaml.safe_load(yamlfile)
+        config.update(this_config)
+
 class TeamDragonParsers:
     
     def __init__(self, analysis_config):
@@ -23,7 +33,7 @@ class TeamDragonParsers:
                                 or None if an error occurred.
         """
         # Define the base URL for the Toronto Open Data API
-        base_url = "https://ckan0.cf.opendata.inter.prod-toronto.ca"
+        base_url = config['base_url']
 
         # Define the URL to access the metadata of a package
         metadata_url = base_url + "/api/3/action/package_show"
@@ -131,6 +141,7 @@ class TeamDragonParsers:
             row['_adult'] = 0
             row['_youth'] = row['arrest_count']
         return row[['_adult','_youth']]
+    
     def arrest_by_year(self, data: pd.DataFrame) -> pd.DataFrame:
 
         # Group rows by year
@@ -154,6 +165,7 @@ class TeamDragonParsers:
                                         youth=('_youth','sum')).reset_index()
 
         return year_age_group
+    
     def arrest_by_age_year(self, data, years):
         barWidth = 0.35
 
@@ -162,8 +174,8 @@ class TeamDragonParsers:
         r2 = [x + barWidth for x in r1]
 
         # Create the bar plots
-        plt.bar(r1, data['adult'], color='blue', width=barWidth, edgecolor='white', label='Adult')
-        plt.bar(r2, data['youth'], color='red', width=barWidth, edgecolor='white', label='Youth')
+        plt.bar(r1, data['adult'], color=config['plot_colour1'], width=barWidth, edgecolor='white', label='Adult')
+        plt.bar(r2, data['youth'], color=config['plot_colour2'], width=barWidth, edgecolor='white', label='Youth')
 
         # Add x-axis and y-axis labels and a title
         plt.xlabel('Year')
@@ -247,7 +259,7 @@ class TeamDragonParsers:
             # between number of arrests over time in Toronto from 2014 to 2022.
 
         # Plotting the data points
-        plt.scatter(annual_police_report['arrest_year'], annual_police_report['arrest_count'], color='teal', label='Data Points')
+        plt.scatter(annual_police_report['arrest_year'], annual_police_report['arrest_count'], color=config['plot_colour1'], label='Data Points')
 
         # Plotting the regression line 
         '''
@@ -259,7 +271,7 @@ class TeamDragonParsers:
         C : array, shape (n_samples,)
             Returns predicted values.
         '''
-        plt.plot(annual_police_report['arrest_year'], model.predict(annual_police_report[['arrest_year']]), color='orange', label='Regression Line')
+        plt.plot(annual_police_report['arrest_year'], model.predict(annual_police_report[['arrest_year']]), color=config['plot_colour2'], label='Regression Line')
 
         # Adding labels and title
         plt.xlabel('Year')
