@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "annual_police_report"
+authors = [
+    { name = "Calen Blackwell", email = "cn.blackwell13@gmail.com" },
+    { name = "Sidra Bushra", email = "maliksidra622@gmail.com" },
+    { name = "Delphin Rajasekhar", email = "maildelphin.k@gmail.com" },
+    { name = "Nhi Vu", email = "vuynhi@gmail.com" },
+    { name = "Chimaobi Osuegbu", email = "chima.osuegbu@gmail.com" }
+]
+description = "Show 4 graphs: Graph 1: Arrests by Year; Graph 2: Arrests By Age; Graph 3: Arrests, Cohort by Year; Graph 4: Relationship between Age and Year."
+version = "2.10.1"
+python = ">=3.10.0"
+readme = "README.md"
+classifiers = [
+    "License :: OSI Approved :: MIT License"
+]
+
+[dependencies]
+pandas = "*"
+logging = "*"
+requests = "*"
+matplotlib = "*"
+numpy = "*"
+toml = "*"
+scikit-learn = "*"
+
+[project.scripts]
+Demo = "annual_police_report:hello_world"
+Demo2 = "annual_police_report:cool_beans"
+
+[tool.hatchling.dependencies]
+TeamDragonParsers = { git = "https://github.com/Cnblackwell/TeamDragonParsers.git" }
