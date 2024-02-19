@@ -1,12 +1,6 @@
 # TeamDragonParsers
 Team Mates: Sidra Bushra, Delphin Rajasekhar, Nhi Vu, Calen Blackwell, & Chimaobi Osuegbu
 
-
-# Project Title : Project Kimaro 
-
-[Project Description]
-This python script ("Project Kimaro") aims to pull data from the Toronto Open Data API, and view the number of charges and arrests made by the Toronto Police Services between 2018 and 2022.
-
 # Project Title : Project Kimaro (annual_police_report.py)
 
 [Project Description]
