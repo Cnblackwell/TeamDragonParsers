@@ -13,7 +13,7 @@ authors = [
 ]
 description = "Show 4 graphs: Graph 1: Arrests by Year; Graph 2: Arrests By Age; Graph 3: Arrests, Cohort by Year; Graph 4: Relationship between Age and Year."
 version = "0.1.0"
-dependencies = ["pandas", "logging", "requests", "json", "matplotlib", "numpy", "toml", "sklearn", "LinearRegression", "yaml"]
+dependencies = ["pandas", "logging", "requests", "matplotlib", "numpy", "toml", "sklearn", "yaml"]
 requires-python = ">=3.10.0"
 readme = "README.md"
 classifiers = [
@@ -24,4 +24,4 @@ classifiers = [
 ArrestsByYear = "annual_police_report:arrest_by_year"
 ArrestsByAge = "annual_police_report:arrest_by_age_year"
 ArrestsCohort = "annual_police_report:arrest_cohort"
-LinearRegression = "annual_police_report:linear_regression" 
+LinearRegression = "annual_police_report:linear_regression"
