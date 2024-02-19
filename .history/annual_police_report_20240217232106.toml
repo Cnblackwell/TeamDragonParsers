@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "annual_police_report"
+authors = [
+    {name1 = "Calen Blackwell", email = "cn.blackwell13@gmail.com"},
+    {name2 = "Sidra Bushra", email ="" },
+    {name3 = "Delphin Rajasekhar", email=""},
+    {name4 = "Nhi Vu", email="" },
+    {name5 = "Chimaobi Osuegbu", email="" }
+    
+]
+description = "Show the 2 graphs: Graph 1.Number of Arrests per year; Graph 2.Number of Arrests per Age Group at Year "
+version = "0.1.0"
+dependencies = ["pandas", "logging", "requests", "json", matplotlib", "numpy", "toml",]
+requires-python = ">=3.10.0"
+readme = "README.md"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.scripts]
+Graph1 ="annual_police_report:x"
+Graph2 ="annual_police_report:y"
+
+
