@@ -119,7 +119,10 @@ class TeamDragonParsers:
         ax.set_title('(Division-D11) Toronto \n ARRESTS COUNT BY YEAR', fontweight='bold')
         ax.set_xlabel('Year')
         ax.set_ylabel('Counts')
-    
+        plt.savefig('arrest_by_year.pdf')
+        #plt.clf()  # Clear the current figure
+        plt.show()
+
     def conditions_f(self, row):    
         if row["age_group"] == 'Adult':
             row['_adult'] = row['arrest_count']
@@ -172,6 +175,9 @@ class TeamDragonParsers:
         
         # Add legend
         plt.legend()
+        plt.savefig('arrest_by_year_age.png')
+        #plt.clf()  # Clear the current figure
+        plt.show()
     
     def arrest_cohort(self, annual_police_report):
         try:
@@ -207,7 +213,10 @@ class TeamDragonParsers:
         except Exception as e:
             print("An error occurred during plot generation:")
             print(e)
-    
+        plt.savefig('arrest_by_year_age_cohort.pdf')
+        #plt.clf()  # Clear the current figure
+        plt.show()
+
     def linear_regression(self, annual_police_report):
         #Show a simple analysis, with mean, max, min for Arrest Year and Arrest Count columns
         analysis_annual_police_report = annual_police_report.describe()
@@ -258,6 +267,7 @@ class TeamDragonParsers:
         plt.title('Linear Regression: "Number of Arrests over Time"')
         plt.legend()
         plt.savefig('Linear_regression.pdf')
+        plt.show()
     
 if __name__ == "__main__":
     analysis_config = ""  # You need to define this variable
@@ -278,19 +288,14 @@ if __name__ == "__main__":
     by_year = instance_class.by_year_f(total_df)
 
     instance_class.year_column(by_year, 'arrest_count')
-    plt.savefig('arrest_by_year.pdf')
-    plt.clf()  # Clear the current figure
+    
 
     year_age_df = instance_class.arrest_by_year(total_df)
     arrest_year = year_age_df['arrest_year']
 
     instance_class.arrest_by_age_year(year_age_df, arrest_year)
-    plt.savefig('arrest_by_year_age.png')
-    plt.clf()  # Clear the current figure
 
     instance_class.arrest_cohort(annual_police_report)
-    plt.savefig('arrest_by_year_age_cohort.pdf')
-    plt.clf()  # Clear the current figure
 
     instance_class.linear_regression(annual_police_report)
 
